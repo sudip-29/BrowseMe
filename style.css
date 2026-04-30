@@ -85,7 +85,7 @@ span {
     font-size: 1.8rem;
     padding: 1rem 2rem;
     border-radius: 3rem;
-background: linear-gradient(
+    background: linear-gradient(
         270deg,
         #DF8908 10%,
         #ff1d15 100%
@@ -100,6 +100,8 @@ background: linear-gradient(
 .gradient-btn:hover {
     transform: scale(1.05);
 }
+
+
 
 section {
     min-height: 100vh;
@@ -346,16 +348,18 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;            /* fills grid/flex column */
+    height: 600px;          /* 🔥 fixed height → all cards equal */
     text-align: center;
     background-color: var(--bg-color);
     border: 2px solid var(--main-color);
-    border-radius: 3rem;
-    gap: 2rem;
-    padding: 5rem 2rem;
-    overflow: hidden;
+    border-radius: 2rem;
+    padding: 2rem;
+    gap: 1rem;
+    overflow: hidden;       /* prevents content breaking layout */
     cursor: pointer;
     box-shadow: 0 0 5px var(--main-color);
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .project-card:hover {

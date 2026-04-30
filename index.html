@@ -27,6 +27,7 @@
         </nav>
 
         <button class="gradient-btn">Contact Me</button>
+          
     </header>
 
 <!-- HEADER -->
@@ -164,9 +165,22 @@
         </div>
 
         <div class="project-card">
+            <img src="HoppinGo.png" alt="">
+            <h3>HoppinGo - Hopping App</h3>
+            <p>An app for hopping from one Puja Pandals to another with ease, based on Kolkata Pujas. It provides real-time updates, navigation, and a seamless experience for devotees to explore and enjoy the festivities.
+            </p>
+        </div>
+
+        <div class="project-card">
             <img src="Facial Recognisation.jpeg" alt="">
             <h3>A Tool for Recognize Face and Detect Age and Gender</h3>
             <p>A smart tool that recognizes faces and detects age and gender using AI-based image analysis.</p>
+        </div>
+
+        <div class="project-card">
+            <img src="OmniGrievance.png" alt="">
+            <h3>OmniGrievance</h3>
+            <p>OmniGrievance is a next-generation Smart Public Service CRM (PS-CRM) that bridges the gap between citizens and government agencies.</p>
         </div>
 
     </div>
@@ -179,12 +193,12 @@
 <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me</span></h2>
 
-    <form action="#">
+    <!-- <form action="https://formsubmit.co/sudipp2005@gmail.com" method="post">
 
         <div class="input-group">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email">
+                <input type="text" name="name" placeholder="Full Name">
+                <input type="email" name="email" placeholder="Email">
             </div>
             <div class="input-box">
                 <input type="number" placeholder="Phone Number">
@@ -193,10 +207,44 @@
         </div>
         <div class="input-group-2">
             <textarea name="" id="" placeholder="Your Message" cols="30" rows="10"></textarea>
+            <input type="hidden" name="_next" value="thanks.html">
+            <input type="submit" value="Send Message" class="btn">
+        </div>
+    </form> -->
+    <!-- <form action="https://formsubmit.co/sudipp2005@gmail.com" method="POST">
+
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+
+        <textarea name="message" placeholder="Your Message" required></textarea>
+
+        <input type="hidden" name="_autoresponse" value="Thanks! I received your message.">
+        <input type="hidden" name="_captcha" value="false">
+
+        <button type="submit">Send</button>
+    </form> -->
+
+       <form action="https://formsubmit.co/sudipp2005@gmail.com" method="post">
+
+        <div class="input-group">
+            <div class="input-box">
+                <input type="text" name="Name" placeholder="Full Name" required>
+                <input type="email" name="Email" placeholder="Email" required>
+            </div>
+            <div class="input-box">
+                <input type="tel" name="Phone" placeholder="Phone Number" required>
+                <input type="text" name="Text" placeholder="Subject" required>
+            </div>
+        </div>
+        <input type="hidden" name="_captcha" value="false">
+        <div class="input-group-2">
+           <textarea name="Message" placeholder="Your Message" required></textarea>
+            <input type="hidden" name="_next" value="https://sudip-29.github.io/BrowseMe/thanks.html">
             <input type="submit" value="Send Message" class="btn">
         </div>
     </form>
-</section>
+
+</sect
 
 <!-- CONTACT -->
 
